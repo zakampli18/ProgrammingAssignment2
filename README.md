@@ -27,7 +27,7 @@ cacheSolve<-function(x = matrix(),...)
     return(m)
   }
   data <- x$get(x)
-  m <- solve(data, ...)   ### Computing the inverse of a square matrix can be done with the solve function in R
+  m <- solve(data, ...)   
   x$setinv(m)
   m
 }
